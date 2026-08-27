@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contribute — A Field Guide to Invader ZIM</title>
-  <meta name="description" content="Submit a new specimen, a correction, or a photograph for inclusion in the Invader ZIM field guide.">
+  <meta name="description" content="Submit a character, a correction, or a photograph for inclusion in the Invader ZIM field guide.">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- header -->
+  <!-- ===== SITE HEADER ===== -->
   <header class="site-header">
     <div class="wrap">
       <a class="site-logo" href="index.html">A Field Guide to Invader ZIM</a>
@@ -24,17 +24,17 @@
     </div>
   </header>
 
-  <!-- main -->
+  <!-- ===== MAIN CONTENT ===== -->
   <main id="main-content">
     <div class="wrap">
 
-      <h1>Contribute a Specimen</h1>
-      <p>Found something this guide missed? Nine entries is a small sample of a show with a large and badly behaved cast, and the selection rule described in the field notes is a judgement call rather than a law. Fill in what you know below. Nothing here actually submits — this is a class project — but every field is real and correctly labelled.</p>
+      <h1>Contribute a Character</h1>
+      <p>Found someone this guide missed? Nine entries is a small sample of a show with a large and badly behaved cast, and the selection rule described in the field notes is a judgement call rather than a law. This guide catalogues characters only, so ships, gadgets, snacks and locations belong somewhere else. Nothing here actually submits — this is a class project — but every field is real and correctly labelled.</p>
 
-      <!-- form -->
+      <!-- ===== CONTRIBUTE FORM ===== -->
       <form class="contribute-form" action="#" method="post">
 
-        <!-- info -->
+        <!-- === Your Information === -->
         <fieldset>
           <legend>Your Information</legend>
 
@@ -59,32 +59,33 @@
           </div>
         </fieldset>
 
-        <!-- entry details  -->
+        <!-- === Character Details === -->
         <fieldset>
-          <legend>Entry Details</legend>
+          <legend>Character Details</legend>
 
           <div class="form-row">
-            <label for="specimen-name">Specimen name</label>
-            <input type="text" id="specimen-name" name="specimen-name" required>
+            <label for="character-name">Character name</label>
+            <input type="text" id="character-name" name="character-name" required>
           </div>
 
           <div class="form-row">
-            <label for="specimen-category">Category</label>
-            <select id="specimen-category" name="specimen-category">
+            <label for="character-category">Category</label>
+            <select id="character-category" name="character-category">
               <option value="">Choose a category</option>
               <optgroup label="Irken Empire">
                 <option value="invader">Invader</option>
-                <option value="tallest">Ruling class</option>
+                <option value="ruling-class">Ruling class</option>
                 <option value="sir-unit">SIR unit</option>
+                <option value="irken-other">Other Irken</option>
               </optgroup>
               <optgroup label="Earth">
-                <option value="human">Human</option>
-                <option value="animal">Animal</option>
-                <option value="unclassified">Unclassified</option>
+                <option value="human-child">Human, skool-age</option>
+                <option value="human-adult">Human, adult</option>
+                <option value="skool-staff">Skool staff</option>
               </optgroup>
-              <optgroup label="Other">
-                <option value="technology">Technology or vehicle</option>
-                <option value="location">Location</option>
+              <optgroup label="Elsewhere">
+                <option value="other-alien">Non-Irken alien</option>
+                <option value="unclassified">Unclassified</option>
               </optgroup>
             </select>
           </div>
@@ -105,12 +106,12 @@
           </div>
 
           <div class="form-row form-row--full">
-            <label for="specimen-notes">Field notes</label>
-            <textarea id="specimen-notes" name="specimen-notes" rows="8" cols="40" placeholder="Two to three sentences describing the specimen and why it belongs in the guide."></textarea>
+            <label for="character-notes">Field notes</label>
+            <textarea id="character-notes" name="character-notes" rows="8" cols="40" placeholder="Two to three sentences describing the character and why the show would be different without them."></textarea>
           </div>
         </fieldset>
 
-        <!--radio group -->
+        <!-- === Radio group === -->
         <fieldset>
           <legend>How often do you rewatch the series?</legend>
 
@@ -159,32 +160,32 @@
     </div>
   </main>
 
-  <!-- footer -->
+  <!-- ===== SITE FOOTER ===== -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-cols">
         <div class="footer-col">
           <h2>The Guide</h2>
           <ul>
-            <li><a href="index.html#guide-notes">How entries are chosen</a></li>
+            <li><a href="index.html#guide-notes">How characters were chosen</a></li>
             <li><a href="index.html#collection">Full collection</a></li>
-            <li><a href="entry.html">Sample entry</a></li>
+            <li><a href="index.html#stats">Guide by the numbers</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h2>Browse</h2>
+          <h2>Irken Characters</h2>
           <ul>
-            <li><a href="index.html#collection">Irken specimens</a></li>
-            <li><a href="index.html#collection">Earth specimens</a></li>
-            <li><a href="index.html#collection">Robotic units</a></li>
+            <li><a href="entry.html">Zim</a></li>
+            <li><a href="entry-tak.html">Tak</a></li>
+            <li><a href="entry-red.html">Almighty Tallest Red</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h2>Contribute</h2>
+          <h2>Earth Characters</h2>
           <ul>
-            <li><a href="contribute.html">Submit an entry</a></li>
-            <li><a href="contribute.html">Report an error</a></li>
-            <li><a href="contribute.html">Suggest a photo</a></li>
+            <li><a href="entry-dib.html">Dib Membrane</a></li>
+            <li><a href="entry-gaz.html">Gaz Membrane</a></li>
+            <li><a href="entry-membrane.html">Professor Membrane</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -199,7 +200,7 @@
       <nav class="footer-nav" aria-label="Footer">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="entry.html">Entry</a></li>
+          <li><a href="index.html#collection">Browse</a></li>
           <li><a href="contribute.html">Contribute</a></li>
         </ul>
       </nav>
