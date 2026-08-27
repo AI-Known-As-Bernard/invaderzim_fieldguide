@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute — A Field Guide to Invader ZIM</title>
+  <meta name="description" content="Submit a new specimen, a correction, or a photograph for inclusion in the Invader ZIM field guide.">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-logo" href="index.html">A Field Guide to Invader ZIM</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#collection">Browse</a></li>
+          <li><a href="contribute.html" aria-current="page">Contribute</a></li>
+          <li><a href="index.html#guide-notes">Field Notes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main id="main-content">
+    <div class="wrap">
+
+      <h1>Contribute a Specimen</h1>
+      <p>Found something this guide missed? Nine entries is a small sample of a show with a large and badly behaved cast, and the selection rule described in the field notes is a judgement call rather than a law. Fill in what you know below. Nothing here actually submits — this is a class project — but every field is real and correctly labelled.</p>
+
+      <!-- form -->
+      <form class="contribute-form" action="#" method="post">
+
+        <!-- info -->
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <div class="form-row">
+            <label for="contributor-name">Your name</label>
+            <input type="text" id="contributor-name" name="contributor-name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="contributor-email">Email address</label>
+            <input type="email" id="contributor-email" name="contributor-email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="contributor-site">Your website or blog</label>
+            <input type="url" id="contributor-site" name="contributor-site" placeholder="https://example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="contributor-phone">Phone number</label>
+            <input type="tel" id="contributor-phone" name="contributor-phone" autocomplete="tel">
+          </div>
+        </fieldset>
+
+        <!-- entry details  -->
+        <fieldset>
+          <legend>Entry Details</legend>
+
+          <div class="form-row">
+            <label for="specimen-name">Specimen name</label>
+            <input type="text" id="specimen-name" name="specimen-name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="specimen-category">Category</label>
+            <select id="specimen-category" name="specimen-category">
+              <option value="">Choose a category</option>
+              <optgroup label="Irken Empire">
+                <option value="invader">Invader</option>
+                <option value="tallest">Ruling class</option>
+                <option value="sir-unit">SIR unit</option>
+              </optgroup>
+              <optgroup label="Earth">
+                <option value="human">Human</option>
+                <option value="animal">Animal</option>
+                <option value="unclassified">Unclassified</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="technology">Technology or vehicle</option>
+                <option value="location">Location</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="first-appearance">First appearance (air date)</label>
+            <input type="date" id="first-appearance" name="first-appearance">
+          </div>
+
+          <div class="form-row">
+            <label for="episode-count">Number of episodes appeared in</label>
+            <input type="number" id="episode-count" name="episode-count" min="1" max="50" step="1">
+          </div>
+
+          <div class="form-row">
+            <label for="photo-source">Link to a usable photo or artwork</label>
+            <input type="url" id="photo-source" name="photo-source" placeholder="https://commons.wikimedia.org/...">
+          </div>
+
+          <div class="form-row form-row--full">
+            <label for="specimen-notes">Field notes</label>
+            <textarea id="specimen-notes" name="specimen-notes" rows="8" cols="40" placeholder="Two to three sentences describing the specimen and why it belongs in the guide."></textarea>
+          </div>
+        </fieldset>
+
+        <!--radio group -->
+        <fieldset>
+          <legend>How often do you rewatch the series?</legend>
+
+          <div class="form-row">
+            <input type="radio" id="watch-weekly" name="watch-frequency" value="weekly">
+            <label for="watch-weekly">Weekly, and I have opinions about episode order</label>
+          </div>
+
+          <div class="form-row">
+            <input type="radio" id="watch-yearly" name="watch-frequency" value="yearly">
+            <label for="watch-yearly">Once a year, usually in October</label>
+          </div>
+
+          <div class="form-row">
+            <input type="radio" id="watch-rarely" name="watch-frequency" value="rarely">
+            <label for="watch-rarely">Rarely, but I remember it clearly</label>
+          </div>
+
+          <div class="form-row">
+            <input type="radio" id="watch-never" name="watch-frequency" value="never">
+            <label for="watch-never">I have never seen it and I am here by accident</label>
+          </div>
+        </fieldset>
+
+        <!-- === Permissions === -->
+        <fieldset>
+          <legend>Permissions</legend>
+
+          <div class="form-row">
+            <input type="checkbox" id="confirm-rights" name="confirm-rights" value="yes">
+            <label for="confirm-rights">I have the right to share any image I linked above</label>
+          </div>
+
+          <div class="form-row">
+            <input type="checkbox" id="credit-me" name="credit-me" value="yes">
+            <label for="credit-me">Credit me by name if this entry is published</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row form-row--full">
+          <button type="submit">Send my submission</button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h2>The Guide</h2>
+          <ul>
+            <li><a href="index.html#guide-notes">How entries are chosen</a></li>
+            <li><a href="index.html#collection">Full collection</a></li>
+            <li><a href="entry.html">Sample entry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Browse</h2>
+          <ul>
+            <li><a href="index.html#collection">Irken specimens</a></li>
+            <li><a href="index.html#collection">Earth specimens</a></li>
+            <li><a href="index.html#collection">Robotic units</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Contribute</h2>
+          <ul>
+            <li><a href="contribute.html">Submit an entry</a></li>
+            <li><a href="contribute.html">Report an error</a></li>
+            <li><a href="contribute.html">Suggest a photo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Elsewhere</h2>
+          <ul>
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            <li><a href="https://validator.w3.org/">W3C Markup Validator</a></li>
+            <li><a href="https://wave.webaim.org/">WebAIM WAVE</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="entry.html">Entry</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+      </nav>
+      <div class="footer-bottom">
+        <p>A student field guide built for the HTML unit. Invader ZIM is the property of its creators and rights holders; this guide is a non-commercial class project.</p>
+        <small>&copy; 2026 Lastname Firstname. Built with no CSS, on purpose.</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
